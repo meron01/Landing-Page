@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>simple chat application</title>
+</head>
+<body>
+<h1>chat box</h1>
+<form action="chat.php" method="post">
+Name:<input name="username" type="text"><br><br>
+<textarea rows="10"cols="50"name="comment" form="userform"placeholder="enter your message here"></textarea>
+
+</form>
+<div id="messageform" type="text">
+<input id="send"type="submit"value="send"><script type="text/javascript">
+document.write ('<p>Current time is: <span id="date-time">', new Date().toLocaleString(), '<\/span>.<\/p>')
+if (document.getElementById) onload = function () {
+	setInterval ("document.getElementById ('date-time').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script>
+</body>
+</html>
+

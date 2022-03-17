@@ -1,0 +1,20 @@
+Login.php
+//Call the connection at the beginning of each PHP file
+<?php
+session_start();
+require 'connect.php';
+?>
+
+<?php
+session_start();
+if (isset($_POST['submit'])) { // if form has been submitted
+
+	/* check they filled in what they were supposed to and authenticate */
+	if(!$_POST['inst_id'] | !$_POST['password']) {
+		echo "You did not fill in a required field.";
+		include('login.html');//Just to reloade the Login Form
+		die('<strong>You did not fill a required field.</strong>');
+	}
+//If the login is  successful tore the id and password in the session like the code below
+	$_SESSION['inst_id'] = $_POST['inst_id'];
+	$_SESSION['password'] = $_POST['password'];

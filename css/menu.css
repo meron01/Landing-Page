@@ -1,0 +1,61 @@
+#Menu
+{
+        height:70px;
+	background-color:#000;
+	background-image: url(ee.jpg);
+	border:inset;
+	border-style:double;
+	border-color:#8B4513;
+}
+
+#Menu ul
+{
+        list-style:none;
+	font-size:16px;
+	
+}
+
+
+#Menu ul li
+{
+	background-color:#66C;
+	width: 200px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	float: left;
+	position: relative;
+	font-size:16px;
+}
+
+#Menu ul li a:link{
+	text-decoration: none;
+	color:white;
+	display:block;
+	font: Tahoma, Geneva, sans-serif;
+	font-size:18px;
+}
+
+#Menu ul li a:visited{
+	text-decoration: none;
+	color: white;
+}
+#Menu  ul li:hover
+{
+        background-color:#3C6;
+	border-radius:8px;
+	font-weight: bold;
+	font-style: italic;
+	background-color: #808000;
+}
+
+
+#Menu ul li a:active
+{
+	color:#F06;
+}
+#Menu ul ul
+{
+	position:absolute;
+	display:none;
+}

@@ -1,0 +1,21 @@
+#Container
+{
+	width: 300px;
+}
+
+#MainCon
+{
+	width: 200px;
+}
+
+
+#sidebar
+{
+	width: 100px;
+}
+
+#Header
+{
+	height: 150px;
+	background:url("image/logo1.jpg") no-repeat; 
+}
